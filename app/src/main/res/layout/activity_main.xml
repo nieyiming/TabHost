@@ -4,12 +4,17 @@
     android:background="#eee"
     android:orientation="vertical">
 
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
     <com.tang.FragmentTabHost
         android:id="@android:id/tabhost"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#eee">
+        android:background="#AAEEEE">
 
         <FrameLayout
             android:id="@android:id/tabcontent"
@@ -18,10 +23,5 @@
             android:layout_weight="0" />
     </com.tang.FragmentTabHost>
 
-    <FrameLayout
-        android:id="@+id/realtabcontent"
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
 
 </LinearLayout>  
